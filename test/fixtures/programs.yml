@@ -19,4 +19,6 @@ or_first_true:
   gene: '{"or":[true,false]}'
 or_second_true:
   gene: '{"or":[false,true]}'
+or_both_true:
+  gene: '{"or":[true,true]}'
 
