@@ -44,5 +44,12 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :test do
+  # From:
+  # https://stackoverflow.com/a/44076520/978509
+  # Need to specify not 5.10.2 to prevent an error
+  gem 'minitest', '~> 5.10', '!= 5.10.2' # add this here to fix error
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

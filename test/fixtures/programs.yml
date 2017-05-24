@@ -2,21 +2,21 @@
 
 # CONSTANTS
 constant_true:
-  gene: ["true"]
+  gene: '[true]'
 constant_false:
-  gene: ["false"]
+  gene: '[false]'
 
 # IF-THEN-ELSE
 if_then_else_true:
-  gene: {"if-then-else":["true","true","false"]}
+  gene: '{"if-then-else":[true,true,false]}'
 if_then_else_false:
-  gene: {"if-then-else":["false","true","false"]}
+  gene: '{"if-then-else":[false,true,false]}'
 
 # OR
 or_both_false:
-  gene: {"or":["false","false"]}
+  gene: '{"or":[false,false]}'
 or_first_true:
-  gene: {"or":["true","false"]}
+  gene: '{"or":[true,false]}'
 or_second_true:
-  gene: {"or":["false","true"]}
+  gene: '{"or":[false,true]}'
 
