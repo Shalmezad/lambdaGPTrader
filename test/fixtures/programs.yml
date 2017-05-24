@@ -1,16 +1,38 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# Full list of functions:
+# or, nand, and, >, <, +, -, *, /, avg, min, max, lag, index, true, false, if-then-else
+# Ordered for this file:
+# Non-ary (is that a word?)
+#   true
+#   false
+#   index - requires data
+# Unary
+#   avg - requires data
+#   min - requires data
+#   max - requires data
+#   lag - requires data
+# Binary
+#   numerical-function
+#     +
+#     -
+#     *
+#     /
+#   numerical-compare
+#     >
+#     <
+#   boolean
+#     or
+#     and
+#     nand
+# Trinary
+#   If-then-else
+
 # CONSTANTS
 constant_true:
   gene: '[true]'
 constant_false:
   gene: '[false]'
-
-# IF-THEN-ELSE
-if_then_else_true:
-  gene: '{"if-then-else":[true,true,false]}'
-if_then_else_false:
-  gene: '{"if-then-else":[false,true,false]}'
 
 # OR
 or_both_false:
@@ -21,4 +43,11 @@ or_second_true:
   gene: '{"or":[false,true]}'
 or_both_true:
   gene: '{"or":[true,true]}'
+
+# IF-THEN-ELSE
+if_then_else_true:
+  gene: '{"if-then-else":[true,true,false]}'
+if_then_else_false:
+  gene: '{"if-then-else":[false,true,false]}'
+
 
